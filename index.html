@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <title>Frontend Mentor | Calculator App</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   </head>
+<body>
+
+  <main>
+
+    <header>
+      <div id="title">calc</div>
+      <div id="switch-text">THEME</div>
+      <div id="switch-container">
+        <div id="switch-nums"><div>1</div><div>2</div><div>3</div></div>
+        <div id="switch-bg" onclick="toggleTheme2()">
+          <div id="switch-indicator"></div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="screen" id="screen">0</div>
+
+    <div class="keypad" id="keypad">
+      <button class="small-key" id="seven" onclick="numPress(event)">7</button>
+      <button class="small-key" id="eight" onclick="numPress(event)">8</button>
+      <button class="small-key" id="nine" onclick="numPress(event)">9</button>
+      <button class="small-key" id="del" onclick="delPress()">DEL</button>
+      <button class="small-key" id="four" onclick="numPress(event)">4</button>
+      <button class="small-key" id="five" onclick="numPress(event)">5</button>
+      <button class="small-key" id="six" onclick="numPress(event)">6</button>
+      <button class="small-key" id="add" onclick="operatorPress(event)">+</button>
+      <button class="small-key" id="one" onclick="numPress(event)">1</button>
+      <button class="small-key" id="two" onclick="numPress(event)">2</button>
+      <button class="small-key" id="three" onclick="numPress(event)">3</button>
+      <button class="small-key" id="subtract" onclick="operatorPress(event)">-</button>
+      <button class="small-key" id="decimal" onclick="numPress(event)">.</button>
+      <button class="small-key" id="zero" onclick="numPress(event)">0</button>
+      <button class="small-key" id="divide" onclick="operatorPress(event)">/</button>
+      <button class="small-key" id="multiply" onclick="operatorPress(event)">x</button>
+      <button class="large-key" id="reset" onclick="resetPress()">RESET</button>
+      <button class="large-key" id="equals" onclick="equalsPress()">=</button>
+    </div>
+
+  </main>
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Scott Freedman</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
